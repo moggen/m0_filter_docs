@@ -27,7 +27,7 @@ Contribute with money or click **Just download**
 
 When the file is downloaded, select **Open file**, or go to your Download folder and double click on the newly downloaded file.
 
-<img src="arduino_homepage4.png"  width="40%" height="40%" />
+<img src="arduino_homepage2.png"  width="40%" height="40%" />
 
 Allow the app to make changes to your device. Click **yes** in the *User Account Control* popup.
 
