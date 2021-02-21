@@ -3,9 +3,9 @@
 PDF versions:
 --
 
-[Installation_English.pdf](Installation_English.pdf)
+[Installation_English.pdf](https://raw.githubusercontent.com/moggen/m0_filter_docs/main/Installation_English.pdf)
 
-[Installation_Svenska.pdf](Installation_Svenska.pdf)
+[Installation_Svenska.pdf](https://raw.githubusercontent.com/moggen/m0_filter_docs/main/Installation_Svenska.pdf)
 
 Markdown source:
 --
