@@ -27,7 +27,7 @@ Om du inte har mjukvaran redan installerat, öppna din browser och gå till
 
 Gå in på menyn **Software** och välj **Downloads**
 
-<img src="arduino_homepage.png" width="50%" height="50%" />
+<img src="arduino_homepage.png" width="450em" />
 
 En lista med varianter för olika operativsystem visas, hitta den som passar
 din dator och klicka på den länken
@@ -38,7 +38,7 @@ och gå förbi genom att klicka **Just download**
 Klicka **Open file** när filen är nedladdad, eller öppna upp den folder du
 har nedladdningar i och dubbelklicka på den fil du just fick hem.
 
-<img src="arduino_homepage2.png"  width="40%" height="40%" />
+<img src="arduino_homepage2.png"  width="300em" />
 
 Du kan få en popup, en sk. *User Account Control*. Tillåt att programmet
 gör förändringar på din dator, klicka **yes**.
@@ -74,11 +74,11 @@ En del extra programmoduler krävs för att få igång stödet för Adafruit Tri
 
 Klicka på menyraden *Tools* och *Manage Libraries...*
 
-<img src="manage_libraries.png"  width="50%" height="50%" />
+<img src="manage_libraries.png"  width="350em" />
 
 Skriv in detta i sökfältet: **dotstar led**
 
-<img src="dotstar_led.png"  width="80%" height="80%" />
+<img src="dotstar_led.png"  width="700em" />
 
 Du ska få en match för *Adafruit DotStar*-biblioteket, klicka **Install** för den.
 
@@ -86,11 +86,11 @@ Stäng med **Close** när det är klart.
 
 Det krävs även programstöd för själva hårdvaran Trinket M0. I menyraden *File*, välj *Preferences*
 
-<img src="preferences.png"  width="40%" height="40%" />
+<img src="preferences.png"  width="300em" />
 
 I den nedre delen av detta fönster finns ett fält för *Additional Boards Manager URLs*
 
-<img src="preferences2.png"  width="80%" height="80%" />
+<img src="preferences2.png"  width="700em" />
 
 Här behöver du skriva eller kopiera in denna exakta URL:<br />
 https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
@@ -100,13 +100,13 @@ Klicka **OK**
 Gå till menyraden *Tools* och *Board: Arduino Uno*. Det kan hända att det
 står nåt annat här men det är det valet som börjar med texten: *Board:*
 
-<img src="boards_manager.png"  width="80%" height="80%" />
+<img src="boards_manager.png"  width="500em" />
 
 En lista med massa olika utvecklingskort visas här, välj det översta alternativet *Boards Manager...*
 
 "Boards Manager" öppnas. Skriv detta i sökfältet: **trinket m0**
 
-<img src="boards_manager2.png"  width="80%" height="80%" />
+<img src="boards_manager2.png"  width="700em" />
 
 Du ska få upp en modul som heter *Adafruit SAMD Boards*, klicka på **Install** på detta.
 
@@ -117,7 +117,7 @@ Avsluta när det är klart med **Close**
 Nu behöver du välja Trinket M0 som aktuellt utvecklingskort.
 Gå till menyraden *Tools*, och det val som börjar med texten *Board:*
 
-<img src="select_board.png"  width="100%" height="100%" />
+<img src="select_board.png"  width="800em" />
 
 Den här gången kommer det upp en kategori för *Adafruit SAMD*, och under den kan man hitta *Adafruit Trinket M0*. Välj den.
 
@@ -127,24 +127,24 @@ Plugga in din Trinket M0 i datorn via en micro-USB-kabel
 
 Kortet kommer att dyka upp som en serieenhet på datorn. Gå till menyraden *Tools* och *Port* och se vad enheten fick för namn. Välj den.
 
-<img src="port.png"  width="60%" height="60%" />
+<img src="port.png"  width="400em" />
 
 På min dator dök den upp som *COM3* men det kan ha blivit något annat namn på din dator. (Linux har andra namnkonventioner för sina enheter, t.ex. */dev/ttyACM0*)
 
 Det utvecklingskort och port som är valt kan alltid ses i nedre högra hörnet på fönstret.
 
-<img src="port2.png"  width="40%" height="40%" />
+<img src="port2.png"  width="300em" />
 
 Nu är det dags att hämta hem filterprogrammet! Skriv eller kopiera den här adressen till din browser:<br />
 https://raw.githubusercontent.com/moggen/m0_filter/main/m0_filter.ino
 
 Nu kan du se källkoden till programmet. Högerklicka på texten och välj: *Save As* , *Save Page As* eller liknande för att spara innehållet som en fil på hårddisken.
 
-<img src="save_as.png"  width="60%" height="60%" />
+<img src="save_as.png"  width="550em" />
 
 Du kan spara filen var du vill, men ett tips för Windows är att lägga filen i katalogen *Documents\Arduino*
 
-<img src="save_as2.png"  width="60%" height="60%" />
+<img src="save_as2.png"  width="500em" />
 
 **Viktigt**: Se till att namnge filen du sparar som *m0_filter.ino* UTAN eventuella extra tillägg som browsern lägger till. Tex. kan *.txt* läggas på, och det ska vi inte ha med.
 
@@ -154,13 +154,13 @@ Välj *m0_filter.ino* och klicka **Open**
 
 Det kommer att poppa upp en fråga om filen ska flyttas in i en egen folder med samma namn. Du behöver klicka **OK** här
 
-<img src="open2.png"  width="40%" height="40%" />
+<img src="open2.png"  width="300em" />
 
 Nu är programkoden inladdad i editeringsfönstret.
 
 Klicka på den cirkulära ikonen i övre delen av fönstret med en pil som pekar åt höger. Detta är uppladdningsfunktionen som utför kompilering och uppladdning till Trinket M0-kortet.
 
-<img src="upload.png"  width="50%" height="50%" />
+<img src="upload.png"  width="300em" />
 
 Om uppladdningen fastnar och får en time-out kan du prova att trycka till en gång på den lilla reset-knappen på Trinket-kortet. Klicka på upload igen efter det. Det kan också hjälpa att dra ur USB och sätta i igen och försöka med upload igen.
 
@@ -169,7 +169,7 @@ Kolla under *Tools* och *Port:* om den har fått nåt annat namn. Välj det nya 
 
 När du ser *Done uploading* i statusfältet så är att klart och Trinket kör sitt nya program.
 
-<img src="done.png"  width="80%" height="80%" />
+<img src="done.png"  width="500em" />
 
 Koppla in ljudet och vrid på potentiometrarna för att höra hur filtret fungerar!
 
