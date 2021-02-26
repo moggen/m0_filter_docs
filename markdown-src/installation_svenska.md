@@ -1,6 +1,7 @@
 Installationshjälp för Arduino-utvecklingsmiljön
 ===
-Skrivet av SA5MOG, Magnus Öberg. 2020-02-08
+Skrivet av SA5MOG, Magnus Öberg. 2020-02-08<br />
+Version 2, 2020-02-26
 
 Steg-för-steg-instruktioner
 --
@@ -25,7 +26,7 @@ kunna programmera Trinket M0.
 Om du inte har mjukvaran redan installerat, öppna din browser och gå till
 **arduino.cc**
 
-Gå in på menyn **Software** och välj **Downloads**
+Gå in på menyn **Software**
 
 <img src="arduino_homepage.png" width="450em" />
 
@@ -121,15 +122,21 @@ Gå till menyraden *Tools*, och det val som börjar med texten *Board:*
 
 Den här gången kommer det upp en kategori för *Adafruit SAMD*, och under den kan man hitta *Adafruit Trinket M0*. Välj den.
 
+När Trinket är vald dyker en ny meny upp under Tools: *Optimize:*
+
+<img src="optimization.png"  width="600em" />
+
+**Viktigt:** m0_filter-programet fungerar inte korrekt med standardinställningen för detta. Välj alternativet *Fastest (-Ofast)* i denna meny!
+
 Nu är Arduino-utvecklingsmiljön redo för att programmera en Trinket M0!
 
 Plugga in din Trinket M0 i datorn via en micro-USB-kabel
 
 Kortet kommer att dyka upp som en serieenhet på datorn. Gå till menyraden *Tools* och *Port* och se vad enheten fick för namn. Välj den.
 
-<img src="port.png"  width="400em" />
+<img src="port.png"  width="500em" />
 
-På min dator dök den upp som *COM3* men det kan ha blivit något annat namn på din dator. (Linux har andra namnkonventioner för sina enheter, t.ex. */dev/ttyACM0*)
+På min dator dök den upp som *COM4* men det kan ha blivit något annat namn på din dator. (Linux har andra namnkonventioner för sina enheter, t.ex. */dev/ttyACM0*)
 
 Det utvecklingskort och port som är valt kan alltid ses i nedre högra hörnet på fönstret.
 
@@ -140,7 +147,7 @@ https://raw.githubusercontent.com/moggen/m0_filter/main/m0_filter.ino
 
 Nu kan du se källkoden till programmet. Högerklicka på texten och välj: *Save As* , *Save Page As* eller liknande för att spara innehållet som en fil på hårddisken.
 
-<img src="save_as.png"  width="550em" />
+<img src="save_as.png"  width="600em" />
 
 Du kan spara filen var du vill, men ett tips för Windows är att lägga filen i katalogen *Documents\Arduino*
 

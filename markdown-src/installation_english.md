@@ -1,6 +1,7 @@
 Install guide for the Arduino environment
 ===
-Written by SA5MOG, Magnus Öberg. 2020-02-08
+Written by SA5MOG, Magnus Öberg. 2020-02-08<br />
+Version 2, 2020-02-26
 
 Step by step instructions
 --
@@ -17,7 +18,7 @@ Note that you only need the Arduino software to program your Trinket M0.
 
 If you do not alreay have the software, please point your web browser to **arduino.cc**
 
-Select **Software** menu and **Downloads**
+Select **Software** menu
 
 <img src="arduino_homepage.png" width="450em" />
 
@@ -106,15 +107,21 @@ Go to *Tools* and the item starting with *Board:*
 
 This time you will see that there is a *Adafruit SAMD* category, find the *Adafruit Trinket M0* in the list and click on it.
 
+After the Trinket board is selected, a new menu will appear in the Tools menu: *Optimize:*
+
+<img src="optimization.png"  width="600em" />
+
+**Important:** The m0_filter program will not work properly with the default setting, so please make sure that the option *Fastest (-Ofast)* is selected here!
+
 The Arduino environment is now ready for Trinket M0 programming!
 
 Plug in your Trinket M0 via a micro-USB cable.
 
 You should have got a specific port for this USB device. Go to *Tools* and *Port* and select the COM device.
 
-<img src="port.png"  width="400em" />
+<img src="port.png"  width="500em" />
 
-On my system it showed up as *COM3* but it may be different on your machine. (Linux has a different naming of ports, for example: */dev/ttyACM0*)
+On my system it showed up as *COM4* but it may be different on your machine. (Linux has a different naming of ports, for example: */dev/ttyACM0*)
 
 The current board and port is always shown in the lower right corner.
 
@@ -125,7 +132,7 @@ https://raw.githubusercontent.com/moggen/m0_filter/main/m0_filter.ino
 
 You can see the source code for the filter here. Right-click and select *Save As* or *Save Page As* or similar to save the contents to a file on your harddrive.
 
-<img src="save_as.png"  width="550em" />
+<img src="save_as.png"  width="600em" />
 
 You can store the file where you like, but a tip for Windows is to write the file to the *Documents\Arduino* folder. 
 
@@ -146,7 +153,6 @@ The program is now loaded into a new Arduino editor window.
 Press the circular icon in the upper part of the window with a right pointing arrow, this is the upload function. It will compile and upload the code to the Trinket M0 hardware.
 
 <img src="upload.png"  width="300em" />
-
 
 If the upload is stuck or times out, you can click once on the little reset button on the Trinket board and try to upload the program again. Pulling out the USB cable and putting it back again may also do the trick.
 
